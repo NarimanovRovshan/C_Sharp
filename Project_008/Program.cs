@@ -50,7 +50,6 @@ string CheckInput()
 
         if(Repeat == 1){
             return(Text);
-            break;
         }
     }
 }
