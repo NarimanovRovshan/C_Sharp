@@ -3,12 +3,12 @@
     int Lines;
     Console.Clear();
     Console.Write("Заполнеие двумерного массива случайными вещественными числами. \n\nВведите размер массива. \nКоличество строк: ");
-    Columns = int.Parse(Console.ReadLine());
-    Console.Write("Количество столбцов: ");
     Lines = int.Parse(Console.ReadLine());
+    Console.Write("Количество столбцов: ");
+    Columns = int.Parse(Console.ReadLine());
     Console.Write("\nРезультат генерации массива:\n");
 
-    double [,] Numbers = new double[Columns,Lines];
+    double [,] Numbers = new double[Lines,Columns];
 
     for(int i = 0; i < Numbers.GetLength(0); i++){
         for(int j = 0; j < Numbers.GetLength(1); j++){
@@ -18,7 +18,7 @@
         Console.WriteLine("");
     }
     
-    Console.Write("\nХотите поробовать ещё раз?(y/n)");
+    Console.Write("\nХотите попробовать ещё раз?(y/n)");
     char a = char.Parse(Console.ReadLine());
     if(a != 'y'){
         break;
