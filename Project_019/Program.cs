@@ -2,9 +2,9 @@
     int Columns;
     int Lines;
     Console.Clear();
-    Console.Write("Заполнеие двумерного массива случайными вещественными числами. \n\nВведите размер массива. \nКоличество столбиков: ");
+    Console.Write("Заполнеие двумерного массива случайными вещественными числами. \n\nВведите размер массива. \nКоличество строк: ");
     Columns = int.Parse(Console.ReadLine());
-    Console.Write("Количество строк: ");
+    Console.Write("Количество столбцов: ");
     Lines = int.Parse(Console.ReadLine());
     Console.Write("\nРезультат генерации массива:\n");
 
