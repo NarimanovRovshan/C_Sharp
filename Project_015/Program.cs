@@ -7,7 +7,7 @@ Console.Write("\nДан массив: [");
 for(int i = 0; i < Numbers.Length; i++)
 {
     Numbers[i] = new Random().Next(-99,100);
-    if(Numbers[i] % 2 != 0)
+    if(i % 2 != 0) //Извините непрпвильно понял, для исправления необходимо было только поменять одну переменную в условие
     {
         Summ += Numbers[i];
     }
