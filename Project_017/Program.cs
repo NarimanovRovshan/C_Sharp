@@ -41,11 +41,11 @@ void FirstOption(){
     for(int i = 0; i < Numbers.Length; i++){
         Console.Write($"\nЧисло {i+1} равно ");
         Numbers[i] = int.Parse(Console.ReadLine());
-        if(Numbers[i] >= 0){
+        if(Numbers[i] > 0){
             Enumerator++;
         }
     }
-Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}\n");
+Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}");
 }
 
 //Вариант 2.(Колхоз,использование большого массива, чтобы не запрашивать количество чисел в массиве!)
@@ -60,7 +60,7 @@ void SecondOption(){
         Numbers[i] = int.Parse(Console.ReadLine());
         Console.Write($"\nВы хотите ввести ещё одно число?(y/n)");
         Question = char.Parse(Console.ReadLine());
-        if(Numbers[i] >= 0){
+        if(Numbers[i] > 0){
             Enumerator++;
         }
         if( Question != 'y'){
@@ -68,7 +68,7 @@ void SecondOption(){
         }
         i++;    
     }
-    Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}\n");
+    Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}");
 }
 
 //Вариант 3. (Использование списков List, что позволяет ввести желаемое количество чисел)
@@ -82,7 +82,7 @@ void ThirdOption(){
         Console.Write($"\nЧисло {index+1} равно ");
         Numbers.Add(index);
         Numbers[index] = int.Parse(Console.ReadLine());
-        if(Numbers[index] >= 0){
+        if(Numbers[index] > 0){
             Enumerator++;
         }
         Console.Write($"\nВы хотите ввести ещё одно число?(y/n)");
@@ -92,5 +92,5 @@ void ThirdOption(){
         }
         index++;
     }
-    Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}\n");
+    Console.WriteLine($"\nКоличество чисел больших 0 в массиве равно {Enumerator}");
 }
